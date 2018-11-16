@@ -1,4 +1,6 @@
 module.exports = {
-  email_token: "",
-  url: ""
+  email_token: "email_token_uuid",
+  url: "smart.noiz.gr_url",
+  email: "email_address",
+  email_subject: "email subject here"
 }

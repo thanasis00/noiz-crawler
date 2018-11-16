@@ -74,9 +74,9 @@ rp(options)
 
       client
         .sendEmail({
-          "From": "realityesc@riseup.net",
-          "To": "realityesc@riseup.net",
-          "Subject": "Αγγελίες από smart.noiz.gr για Ampeg",
+          "From": config.email,
+          "To": config.email,
+          "Subject": config.email_subject,
           "TextBody": emailTemplate,
           "HtmlBody": emailTemplate,
         })
