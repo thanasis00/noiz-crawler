@@ -1,0 +1,20 @@
+mixin link(href)
+  //- attributes == {class: "btn"}
+  a(href=href)= href
+
+
+
+h1 Αγγελίες smart.noiz.com για ampeg
+
+table(cellpadding=20 cellspacing=0 border=1)
+  tr
+    th(align="left") Τίτλος
+    th(align="left") Κόστος
+    th(align="left") Ημερομηνία
+    th(align="left") Link
+  each item in items
+    tr
+      td #{item.title}
+      td #{item.price}
+      td #{item.date}
+      td #[a(href=item.url target="_blank")= item.url]
